@@ -1,0 +1,146 @@
+*
+{
+	width: 100%;
+}
+
+.container
+{
+	width: 1000px;
+	margin: 0 auto;
+
+}
+#title
+{
+	text-align: center;
+	font-family: 'Roboto Slab', sans-serif;
+	font-style: bold;
+	font-size: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #0F140B;
+}
+#gloating
+{
+	text-align: center;
+	font-family: 'Ubuntu Mono', sans-serif;
+	font-size: 20px;
+	color: grey;
+}
+.listed_link
+{
+	text-align: center;
+}
+.section{
+	padding: 20px 0 20px 20px;
+}
+.section_title
+{
+	text-align: center;
+	font-family: 'Roboto Slab', sans-serif;
+	font-style: bold;
+	font-size: 50px;
+}
+
+a
+{
+	text-align: center;
+	font-family: 'Ubuntu Mono', sans-serif;
+	font-size: 30px;
+	color: grey;
+	padding: 10px;
+	margin: 0 auto;
+	text-decoration: none
+}
+
+a:hover
+{
+	color: #3A423C;
+}
+
+//HABIT START
+.habits
+{
+	text-align: center;
+}
+.habit_title
+{
+	text-align: center;
+	font-family: 'Ubuntu Mono', sans-serif;
+	font-size: 30px;
+	color: grey;
+	padding: 10px;
+}
+.habit_start
+{
+	text-align: center;
+	font-family: 'Ubuntu Mono', sans-serif;
+	font-size: 15px;
+	color: grey;
+	padding: 5px;
+	margin: 0 auto;
+}
+.habit_tracker
+{
+	width: 100%;
+	margin: 0 auto;
+}
+.habit-table
+{
+	//display: table;
+	//table-layout: fixed;
+	padding: 10px;
+	margin: 0 0 0 0;
+}
+span
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	font-family: 'Ubuntu Mono', sans-serif;
+	padding: 2px;
+}
+
+span.d
+{
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+}
+span.d:hover
+{
+	background-color: grey;
+	border-color: grey;
+}
+
+span.n
+{
+
+	border: 2px solid black;
+}
+span.n:hover
+{
+	border-color: grey;
+	color: grey;
+}
+
+span.y
+{
+	border: 2px solid grey;
+	color: grey;
+	background-color: white;
+}
+span.y:hover
+{
+	color: black;
+	border-color: black;
+}
+//END HABIT
+
+//START MLK
+#MLK
+{
+
+}
+
+//END MLK
