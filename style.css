@@ -101,13 +101,13 @@ span
 	padding: 2px;
 }
 
-span.d
+span.y
 {
 	background-color: black;
 	color: white;
 	border: 2px solid black;
 }
-span.d:hover
+span.y:hover
 {
 	background-color: grey;
 	border-color: grey;
@@ -124,13 +124,13 @@ span.n:hover
 	color: grey;
 }
 
-span.y
+span.l
 {
 	border: 2px solid grey;
 	color: grey;
 	background-color: white;
 }
-span.y:hover
+span.l:hover
 {
 	color: black;
 	border-color: black;
