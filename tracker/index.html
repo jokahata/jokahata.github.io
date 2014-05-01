@@ -1,0 +1,65 @@
+<head>
+
+    <style type="text/css">
+    .coin
+    {
+        background-color: #FFEF0A;
+        border-color: #FFA50A;
+        height: 10px;
+        width: 10px;
+        padding: 2px;
+        display: inline-block;
+        margin: 2px;
+    }
+
+    #vault
+    {
+        border: 3px solid #6E6C68;
+        background-color: #ADACAA;
+        width: 200px;
+        min-height: 200px;
+        margin: 0 auto;
+
+    }
+
+    .cell
+    {
+
+    }
+    </style>
+
+    <script>
+
+    function createButton(context, func){
+         var button = document.createElement("input");
+         button.type = "button";
+         button.value = "I did a pomodoro!";
+         button.onclick = func;
+         context.appendChild(button);
+     }
+     
+     window.onload = function(){
+        num = 0;
+         createButton(document.getElementById("button_holder"), function(){
+             num++;
+             document.getElementById("num").innerHTML = "Num: " +  num;
+             var pep = document.createElement("div");
+             pep.className = "coin";
+             document.getElementById("vault").appendChild(pep);
+         });
+         document.getElementById("num").innerHTML = "Num: " +  num;
+     }
+    </script>
+</head>
+<body>
+    <div id="button_holder">
+    </div>
+    <div id="num">
+
+    </div>
+
+    <div id="vault">
+
+    </div>
+
+</body>
