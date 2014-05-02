@@ -1,0 +1,40 @@
+
+.coin
+{
+    background-color: #FFEF0A;
+    border: 3px solid #FFA50A;
+    height: 11px;
+    width: 11px;
+    padding: 2px;
+    display: inline-block;
+    margin: 2px;
+
+
+}
+
+.coin_in1
+{
+    height: 4px;
+    width: 4px;
+    margin: 5px;
+    margin: auto;
+    position: relative;
+    bottom: -2px;
+    
+
+}
+
+#vault
+{
+    border: 3px solid #6E6C68;
+    background-color: #ADACAA;
+    width: 200px;
+    min-height: 200px;
+    margin: 0 auto;
+
+}
+
+.cell
+{
+
+}
