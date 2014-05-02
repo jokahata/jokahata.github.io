@@ -11,24 +11,19 @@ window.onload = function(){
 
 function addCoin()
 {
-    num++;
+        num++;
         document.getElementById("num").innerHTML = "Num: " +  num;
         var pep = document.createElement("div");
         pep.className = "coin";
-         var in1 = document.createElement("div");
-         in1.className = "coin_in1";
-         var in2 = document.createElement("div");
-         in2.className = "coin_in2";
-         in1.appendChild(in2);
-         pep.appendChild(in1);
 
-         document.getElementById("vault").appendChild(pep);
+         $(".active").append(pep);
 }
 
 
 function createButton(context, text, func){
      var button = document.createElement("input");
      button.type = "button";
+     $(button).addClass("sweet_button");
      button.value = text;
      button.onclick = func;
      $(context).append(button);
