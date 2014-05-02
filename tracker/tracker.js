@@ -1,9 +1,15 @@
 
  
 window.onload = function(){
-    coins = 0;
     cells = 0;
+    coins = 0;
     coinsPerCell = 16;
+    if (localStorage.getItem("pomodoro_coins") != null)
+    {
+        loadState();
+    }
+    
+    
     var buttonHolder = $("#button_holder")
     createButton(buttonHolder, "I did a pomodoro", addCoin);
 
@@ -14,6 +20,11 @@ window.setInterval(function(){
 
     wiggleRandomCoin();
 }, 1000);
+
+window.setInterval(function(){
+
+    saveState();
+}, 5000);
 
 function wiggleRandomCoin()
 {
@@ -94,5 +105,14 @@ function createCell()
 function saveState()
 {
     localStorage["pomodoro_coins"] = coins;
-    localStorage["pomodoro_cells"] = cells;
+    console.log("State saved!");
+}
+
+function loadState()
+{
+    temp = localStorage["pomodoro_coins"];
+    while( coins < temp)
+    {
+        addCoin();
+    }
 }
