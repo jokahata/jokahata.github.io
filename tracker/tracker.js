@@ -2,20 +2,25 @@
  
 window.onload = function(){
     coins = 0;
+    cells = 0;
+    coinsPerCell = 16;
     var buttonHolder = $("#button_holder")
     createButton(buttonHolder, "I did a pomodoro", addCoin);
-    createButton(buttonHolder, 'Add cell', createCell);
 
     document.getElementById("num").innerHTML = "Coins: " +  coins;
 }
 
-function addCoin()
+function addCoin()  
 {
+        
         coins++;
+        if (coins > cells * coinsPerCell)
+        {
+            createCell();
+        }
         document.getElementById("num").innerHTML = "Coins: " +  coins;
         var newCoin = document.createElement("div");
         $(newCoin).addClass("coin");
-
          $(".active").append(newCoin);
 }
 
@@ -34,7 +39,7 @@ function createCell()
     var newCell = document.createElement("div");
     $(".active").removeClass("active");
     $(newCell).addClass("cell active");
-    
+    cells++;
     $("#vault").append(newCell);
 
 }
