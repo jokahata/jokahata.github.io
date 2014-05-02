@@ -1,22 +1,22 @@
 
  
 window.onload = function(){
-    num = 0;
+    coins = 0;
     var buttonHolder = $("#button_holder")
     createButton(buttonHolder, "I did a pomodoro", addCoin);
     createButton(buttonHolder, 'Add cell', createCell);
 
-    document.getElementById("num").innerHTML = "Num: " +  num;
+    document.getElementById("num").innerHTML = "Coins: " +  coins;
 }
 
 function addCoin()
 {
-        num++;
-        document.getElementById("num").innerHTML = "Num: " +  num;
-        var pep = document.createElement("div");
-        pep.className = "coin";
+        coins++;
+        document.getElementById("num").innerHTML = "Coins: " +  coins;
+        var newCoin = document.createElement("div");
+        $(newCoin).addClass("coin");
 
-         $(".active").append(pep);
+         $(".active").append(newCoin);
 }
 
 
