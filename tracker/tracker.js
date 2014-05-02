@@ -34,23 +34,30 @@ function addCoin()
         $(newCoin).on('click',function() {
             $(this).css('position', 'relative');
             $(this).animate({
-              top: '-4px'
+                
+              top: '2px',
+              height: '20px',
+            });
+            $(this).animate({
+                
+              top: '4px',
+              height: '15px',
             });
             $(this).animate({
               top: '0px'
             });
         });
         $( newCoin ).hover(
-    function() {
-        $(this).css('position', 'relative');
-        $(this).animate({
-            top: '-4px'
-        });;
-        }, function() {
-            $(this).animate({
-                top: '0px'
+            function() {
+                $(this).css('position', 'relative');
+                $(this).animate({
+                    top: '4px'
+                });;
+            }, function() {
+                $(this).animate({
+                   top: '0px'
+                });
             });
-        });
          $(".active").append(newCoin);
          $(newCoin).animate({
             opacity: 1
@@ -72,7 +79,10 @@ function createCell()
 {
     var newCell = document.createElement("div");
     $(".active").removeClass("active");
-    $(newCell).addClass("cell active");
+    $(newCell).addClass("cell");
+    var innerCell = document.createElement("div");
+    $(innerCell).addClass("inner_cell active");
+    $(newCell).append(innerCell);
     cells++;
     $("#vault").append(newCell);
     $(".active").animate({

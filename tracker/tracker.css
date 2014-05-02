@@ -40,7 +40,7 @@
     width: 15px;
     display: inline-block;
     margin: 2px;
-
+    vertical-align: bottom;
 }
 
 #vault
@@ -55,9 +55,22 @@
 .cell
 {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     margin: 20px;
     border: 3px solid #6E6C68;
     background-color: #ADACAA;
     width: 100px;
+    height: 100px;
+}
+
+.inner_cell  
+{
+    display: table-cell;
+    //vertical-align:bottom;
+    height: 100%;
+    -webkit-transform: rotate(180deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(180deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(180deg);  /* IE 9 */
+    -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
+    transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera 12.50+ */
 }
