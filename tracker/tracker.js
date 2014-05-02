@@ -20,8 +20,11 @@ function addCoin()
         }
         document.getElementById("num").innerHTML = "Coins: " +  coins;
         var newCoin = document.createElement("div");
-        $(newCoin).addClass("coin");
+        $(newCoin).addClass("coin").css("opacity", 0);
          $(".active").append(newCoin);
+         $(newCoin).animate({
+            opacity: 1
+         }, "slow");
 }
 
 
@@ -41,5 +44,14 @@ function createCell()
     $(newCell).addClass("cell active");
     cells++;
     $("#vault").append(newCell);
+    $(".active").animate({
+        height: 100
+    });
 
+}
+
+function saveState()
+{
+    localStorage["pomodoro_coins"] = coins;
+    localStorage["pomodoro_cells"] = cells;
 }
