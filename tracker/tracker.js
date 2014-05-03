@@ -46,9 +46,8 @@ function addCoin()
             $(this).css('position', 'relative');
             $(this).animate({
                 
-              top: '2px',
-              height: '20px',
-            });
+              height: '18px',
+            }, 'fast');
             $(this).animate({
                 
               top: '4px',
