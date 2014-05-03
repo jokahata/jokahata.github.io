@@ -46,13 +46,18 @@ function addCoin()
             $(this).css('position', 'relative');
             $(this).animate({
                 
+              height: '16px',
+            }, 100);
+            $(this).animate({
+                
               height: '18px',
-            }, 'fast');
+              top: '3px'
+            }, 100);
             $(this).animate({
                 
               top: '4px',
               height: '15px',
-            });
+            }, 'fast');
             $(this).animate({
               top: '0px'
             });
