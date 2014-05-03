@@ -19,7 +19,7 @@ window.onload = function(){
 window.setInterval(function(){
 
     wiggleRandomCoin();
-}, 1000);
+}, 200);
 
 window.setInterval(function(){
 
