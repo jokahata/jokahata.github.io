@@ -1,9 +1,6 @@
 
-#calendar
+#calendar1
 {
-	//border: 2px solid black;
-	//border-right: 5px solid orange;
-	//border-bottom: 5px solid orange;
 	margin: 0 auto;
 	border-collapse: separate;
 	border-spacing: 10px 10px;
@@ -11,25 +8,57 @@
 	color: orange;
 }
 
-#calendar tr
+#calendar1 tr
 {
 	margin: 100px;
 
 }
 
-#days_of_week td
+#calendar1 > #days_of_week td
+{
+	text-align: center;
+	border-top: none;
+}
+
+#calendar1 .date_row td
+{
+	border-left: 5px solid orange;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+	padding: 5px;
+}
+
+
+#calendar2
+{
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 10px 10px;
+	font-family: Quicksand, Arial;
+	color: #AAE6AB;
+}
+
+#calendar2 tr
+{
+	margin: 100px;
+
+}
+
+#calendar2 > #days_of_week td
 {
 	text-align: center;
 	border-top: none;
 	//border-bottom: 5px solid orange;
 }
 
-.date_row td
+#calendar2 .date_row td
 {
-	//border-top: 3px solid orange;
-	border-left: 5px solid orange;
+	color: white;
+	background-color: #AAE6AB;
 	height: 100px;
 	width: 100px;
 	vertical-align: top;
 	padding: 5px;
+	border-radius: 5;
 }

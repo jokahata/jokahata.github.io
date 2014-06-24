@@ -1,10 +1,93 @@
 <html>
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 		<link href="style_calendar.css" rel="stylesheet" type="text/css">
+		<script src="tracker/jquery-1.11.0.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$(".date_row").children("td").each(function() {
+					if (isEmpty($(this)))
+					{
+						$(this).css({
+							"background-color" : "white",
+							"border" : "none"
+						});
+					}
+				});
+			});
+
+			function isEmpty(el)
+			{
+				return !$.trim(el.html());
+			}
+		</script>
 	</head>
 	<body>
-		<table id="calendar">
+		<table id="calendar1">
+			<thead>
+				
+			</thead>
+			<tr id="days_of_week">
+				<td> Monday </td>
+				<td> Tuesday </td>
+				<td> Wednesday </td>			
+				<td> Thursday </td>			
+				<td> Friday </td>			
+				<td> Saturday </td>			
+				<td> Sunday </td>			
+			</tr>
+			<tr class="date_row">
+				<td> </td>
+				<td> 1 </td>					
+				<td> 2 </td>					
+				<td> 3 </td>					
+				<td> 4 </td>					
+				<td> 5 </td>					
+				<td> 6 </td>					
+								
+			</tr>
+			<tr class="date_row">
+				<td> 7 </td>	
+				<td> 8 </td>					
+				<td> 9 </td>					
+				<td> 10 </td>					
+				<td> 11 </td>					
+				<td> 12 </td>					
+				<td> 13 </td>									
+			</tr>
+			<tr class="date_row">
+				<td> 14</td>	
+				<td> 15 </td>					
+				<td> 16 </td>					
+				<td> 17 </td>					
+				<td> 18 </td>					
+				<td> 19 </td>					
+				<td> 20 </td>									
+			</tr>
+			<tr class="date_row">
+				<td> 21 </td>
+				<td> 22 </td>	
+				<td> 23 </td>					
+				<td> 24 </td>					
+				<td> 25 </td>					
+				<td> 26 </td>					
+				<td> 27 </td>					
+			</tr>
+			<tr class="date_row">
+				<td> 28 </td>					
+				<td> 29 </td>					
+				<td> 30 </td>	
+				<td> 31 </td>					
+				<td>  </td>					
+				<td>  </td>					
+				<td>  </td>									
+			</tr>
+		</table>
+
+
+		<table id="calendar2">
 			<thead>
 				
 			</thead>
