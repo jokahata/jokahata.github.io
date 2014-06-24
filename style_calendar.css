@@ -1,0 +1,35 @@
+
+#calendar
+{
+	//border: 2px solid black;
+	//border-right: 5px solid orange;
+	//border-bottom: 5px solid orange;
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 10px 10px;
+	font-family: Raleway, Arial;
+	color: orange;
+}
+
+#calendar tr
+{
+	margin: 100px;
+
+}
+
+#days_of_week td
+{
+	text-align: center;
+	border-top: none;
+	//border-bottom: 5px solid orange;
+}
+
+.date_row td
+{
+	//border-top: 3px solid orange;
+	border-left: 5px solid orange;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+	padding: 5px;
+}
